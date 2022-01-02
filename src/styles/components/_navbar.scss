@@ -1,0 +1,35 @@
+.navbar {
+  
+  color:inherits;
+  padding: 10px;
+  background-color: bisque;
+  margin-bottom: 20px;
+  div {
+    display: flex;
+    gap: 20px;
+  }
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    text-decoration: underline;
+  }
+    a {
+      gap: 10px;
+      padding: 10px;
+      border-radius: 4px;
+      position: relative;
+    }
+    .active {
+      &::after {
+        content: "";
+        width: 85%;
+        height: 5px;
+        background: $color-1;
+        position: absolute;
+        bottom: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
